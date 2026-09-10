@@ -321,8 +321,6 @@ footer{border-top:1px solid var(--line); padding:18px 0; color:var(--muted); fon
 <section class="tabpane" id="pane-bs">
   <div class="cfgmount" id="cfgMount-bs"></div>
 
-  <div class="model-intro bs-intro"><div class="model-mark">BS</div><div><h2>Evaluare în timp continuu</h2><p>Black–Scholes oferă prețul teoretic al unei opțiuni europene. Urmărește traseul de la ipoteze și parametri până la <i>d</i><sub>1</sub>, <i>d</i><sub>2</sub>, preț și paritatea put–call.</p></div><div class="model-tag">Soluție analitică</div></div>
-
   <div class="cards" id="cardsBS"></div>
   <div id="alertsBS"></div>
 
@@ -400,8 +398,6 @@ footer{border-top:1px solid var(--line); padding:18px 0; color:var(--muted); fon
 <!-- ===================== TAB 2: MODELUL BINOMIAL (CRR) ===================== -->
 <section class="tabpane" id="pane-crr">
   <div class="cfgmount" id="cfgMount-crr"></div>
-
-  <div class="model-intro crr-intro"><div class="model-mark">CRR</div><div><h2>Evaluare pas cu pas</h2><p>Arborele Cox–Ross–Rubinstein face vizibile scenariile posibile și inducția inversă. Este util mai ales pentru a înțelege opțiunile americane și exercitarea anticipată.</p></div><div class="model-tag">Model discret</div></div>
 
   <div class="panel" style="margin-bottom:20px">
     <div class="ph nctrl">
@@ -505,7 +501,7 @@ footer{border-top:1px solid var(--line); padding:18px 0; color:var(--muted); fon
 <!-- ===================== TAB 3: STRATEGII CU OPTIUNI ===================== -->
 <section class="tabpane on" id="pane-strategii">
   <div class="strategy-hero">
-    <div><div class="eyebrow">PAYOFF LAB</div><h2>Strategii cu opțiuni</h2><p>Explorează profitul la scadență, pornește de la strategii consacrate sau construiește o combinație proprie dintr-un option chain simulat.</p></div>
+    <div><div class="eyebrow">PAYOFF LAB</div><h2>Strategii cu opțiuni</h2></div>
     <div class="market-pill"><span class="live-dot"></span><span>SIMULARE</span><b id="stratSpotBadge">SPOT 100,00</b></div>
   </div>
 
@@ -543,7 +539,7 @@ footer{border-top:1px solid var(--line); padding:18px 0; color:var(--muted); fon
 
 <!-- ===================== TAB: MISCARE BROWNIANA SI ITO ===================== -->
 <section class="tabpane" id="pane-brownian">
-  <div class="lab-hero brownian-hero"><div><div class="eyebrow">STOCHASTIC LAB</div><h2>De la zgomot aleator la intervale pentru preț</h2><p>Același șoc este transformat pas cu pas: incrementări independente, mișcare browniană cumulată, proces cu drift și volatilitate, apoi un preț lognormal pentru care putem estima un interval probabil.</p></div><div class="formula-chip">dB<sub>t</sub> ~ N(0, dt)</div></div>
+  <div class="lab-hero brownian-hero"><div><div class="eyebrow">STOCHASTIC LAB</div><h2>De la zgomot aleator la intervale pentru preț</h2></div><div class="formula-chip">dB<sub>t</sub> ~ N(0, dt)</div></div>
   <div class="panel sim-controls"><div class="ph"><h3>Parametrii simulării</h3><button class="btn primary" id="bmResim" type="button">Simulare nouă</button></div><div class="pb lab-controls">
     <div><label class="fl">Traiectorii</label><select id="bmPaths"><option selected>1</option><option>5</option><option>20</option><option>50</option></select></div>
     <div><label class="fl">Pași</label><select id="bmSteps"><option>50</option><option selected>252</option><option>500</option><option>1000</option></select></div>
@@ -2034,4 +2030,3 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </body>
 </html>
-
